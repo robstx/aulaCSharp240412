@@ -125,5 +125,12 @@ namespace ProjetoLojaABC
                 btnNovo.Enabled = true;
             }
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            frmPesquisar abrir = new frmPesquisar();
+            abrir.Show();
+
+        }
     }
 }

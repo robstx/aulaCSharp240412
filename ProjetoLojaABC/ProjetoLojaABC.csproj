@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmPesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisar.Designer.cs">
+      <DependentUpon>frmPesquisar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisar.resx">
+      <DependentUpon>frmPesquisar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSobre.resx">
       <DependentUpon>frmSobre.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +110,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesquisa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
